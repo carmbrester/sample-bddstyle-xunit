@@ -1,4 +1,3 @@
-using System;
 using System.Threading.Tasks;
 using AutoFixture;
 using Xunit;
@@ -10,17 +9,13 @@ namespace Charm.Sample.BddStyle.Tests
     {
         private DatabaseFixture _fixture;
         private IFixture _autofixture;
-        private IConnectionFactory _connectionFactory;
         private ContactsRepository _contactsRepository;
 
         private Contact _contact;
-
         private string _username;
 
         private int _initialContactRowCount;
         private int _initialContactAduitRowCount;
-
-        private int _contactId;
 
         public WhenInsertingContact(DatabaseFixture fixture)
         {
@@ -61,7 +56,7 @@ namespace Charm.Sample.BddStyle.Tests
         public void ShouldIncreaseContactAuditsRowCount()
         {
             var afterInsertContactRowCount = RepositoryTestsHelper.GetTableRowCount(_fixture, "contact_audits");
-            Assert.Equal(_initialContactRowCount + 1, afterInsertContactRowCount);
+            Assert.Equal(_initialContactAduitRowCount + 1, afterInsertContactRowCount);
         }
 
         [Fact]
