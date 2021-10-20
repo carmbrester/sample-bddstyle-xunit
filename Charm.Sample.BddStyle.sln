@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31727.386
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Charm.Sample.BddStyle", "Charm.Sample.BddStyle\Charm.Sample.BddStyle.csproj", "{F1FC6BB9-BAD5-4066-B219-59C8BF6DF19B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "db", "db", "{65402505-D362-4F41-9643-609A80001123}"
+	ProjectSection(SolutionItems) = preProject
+		db\Initial-Setup.sql = db\Initial-Setup.sql
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Charm.Sample.BddStyle.Tests", "Charm.Sample.BddStyle.Tests\Charm.Sample.BddStyle.Tests.csproj", "{8BC6F6C2-3D36-4405-AC69-B8F9A2C27893}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1FC6BB9-BAD5-4066-B219-59C8BF6DF19B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1FC6BB9-BAD5-4066-B219-59C8BF6DF19B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1FC6BB9-BAD5-4066-B219-59C8BF6DF19B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1FC6BB9-BAD5-4066-B219-59C8BF6DF19B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BC6F6C2-3D36-4405-AC69-B8F9A2C27893}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BC6F6C2-3D36-4405-AC69-B8F9A2C27893}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BC6F6C2-3D36-4405-AC69-B8F9A2C27893}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BC6F6C2-3D36-4405-AC69-B8F9A2C27893}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FE637499-588D-4EBC-A221-2A4B363A8AE6}
+	EndGlobalSection
+EndGlobal
